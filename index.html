@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=3.0" />
+	<title>Responsive Menu</title>
+	
+	<style type="text/css">
+		html {
+			position:relative;
+		}
+		body {
+			font-family: arial,sans-serif,sans;
+		}
+		.resp_menu {
+			float:right;
+			position:absolute;
+			top:0;
+			right:0;
+			list-style-type: none;
+			text-indent: 0;
+			padding:0;
+			margin:20px 0 0 0;
+			min-width:1px;
+			min-height:49px;
+		}
+		.resp_menu li {
+			display:block;
+			float:left;
+			margin:0 1em 0 0;
+		}
+		.resp_menu li a {
+			text-decoration:none;
+			color:#777;
+		}
+		.resp_menu li a:hover {
+			color:#000;
+		}
+		.resp_menu li.resp_menu_selected a {
+			color:#000;
+		}
+		
+		@media screen and (max-width: 800px) {
+			.resp_menu {
+				padding-right:64px;
+				line-height:49px;
+				background: url(img/menuicon.png) right top no-repeat;
+				margin:2px 0 0 0;
+			}
+			.resp_menu li {
+				display:none;
+				float:none;
+				margin-right:0;
+			}
+			.resp_menu li.resp_menu_selected {
+				display:block;
+			}
+			.resp_menu:hover li {
+				display:block;
+				line-height:1em;
+				background:#000;
+				color:#fff;
+				animation: fadein 2s;
+			}
+			.resp_menu:hover li a {
+				display:block;
+				background:#000;
+				color:#fff;
+				border-top:1px solid #333;
+				padding:8px 16px;
+			}
+			.resp_menu li.resp_menu_selected a {
+				color:#777;
+			}
+			.resp_menu li a:hover {
+				color:#777;
+			}
+		}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+	<h1 style="margin:0;padding:0;float:left;">Logo</h1><div style="clear:both;"></div>
+	<ul class="resp_menu">
+		<li><a href="#">Intro</a></li>
+		<li><a href="#">Pagina 1</a></li>
+		<li><a href="#">La pagina due</a></li>
+		<li><a href="#">Pag 3</a></li>
+		<li><a href="#">La quarta pagina</a></li>
+		<li><a href="#">Pagina 5</a></li>
+		<li><a href="#">Pagina 6</a></li>
+		<li><a href="#">Pagina 7</a></li>
+	</ul>
+	<h1 style="margin-top:64px;">A Big Title</h1>
+	<div>Some random text</div>
+	<div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quam sapien, cursus vitae aliquam vitae, placerat bibendum nisi. Nullam porttitor in ante eu eleifend. Ut vitae ligula a ligula fringilla pharetra eget id lacus. In id aliquet ipsum. Aliquam eget elit at erat accumsan pharetra nec id tortor. Sed elementum, massa in vehicula fermentum, arcu nisl rhoncus elit, nec sagittis eros elit sit amet ligula. Nullam fermentum venenatis vestibulum. Donec nec dolor hendrerit, commodo lectus nec, malesuada justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sapien arcu, venenatis vel tellus vitae, malesuada dignissim ligula. Donec rutrum adipiscing diam sit amet eleifend. Nulla et auctor orci. Praesent sit amet volutpat elit. Donec tincidunt dui eu erat rhoncus, a facilisis metus auctor.
+
+Proin imperdiet libero adipiscing felis condimentum lobortis. Ut porta sem non erat auctor, vitae sagittis neque aliquet. Pellentesque vel dignissim nisi. Aenean scelerisque sed tellus at feugiat. Vivamus egestas porttitor felis eget viverra. Nam egestas nisi et mollis pretium. Phasellus lobortis lectus et consequat mollis. Curabitur eleifend lacinia lorem vitae adipiscing. Fusce ultrices, nisi vel malesuada tincidunt, lectus lacus fermentum magna, ac malesuada felis eros vitae dui.
+
+Mauris non ante ante. Suspendisse bibendum elit quis odio ullamcorper, eu gravida urna viverra. Sed luctus nisl nibh, in vulputate purus posuere non. Aliquam sit amet ipsum pulvinar, aliquet turpis eu, vehicula augue. Suspendisse lobortis laoreet purus, sed posuere lacus suscipit non. Phasellus non erat ut odio condimentum euismod vitae sed risus. Etiam in ornare augue. Duis in laoreet purus.
+
+Fusce eleifend feugiat dictum. Etiam purus dolor, tempus laoreet erat id, venenatis aliquet mauris. Integer sollicitudin, nibh ac porta hendrerit, diam arcu semper ipsum, et iaculis lorem dui nec eros. Aenean adipiscing turpis sit amet elit blandit, eu mattis ipsum lacinia. Fusce a sapien urna. Fusce vehicula lorem sit amet molestie lacinia. Duis at viverra metus. Donec at laoreet ligula. Ut at dictum nulla.
+
+Phasellus aliquam, dolor vitae lobortis lacinia, risus turpis eleifend felis, eget adipiscing risus mi nec est. Donec sed quam sed nibh convallis iaculis. Nulla in justo quam. Duis quis lorem massa. Phasellus nec nisl vel erat pulvinar luctus id ut ante. Fusce euismod nunc ornare lectus ullamcorper mattis. Sed dignissim ullamcorper euismod. Quisque venenatis massa ut mi tempus convallis. Morbi quam sem, consequat cursus volutpat accumsan, bibendum vel lacus. Vivamus non lectus nibh. Vivamus porttitor est eget urna dictum suscipit. Donec congue, elit feugiat consequat tincidunt, ipsum nunc laoreet nisi, sed aliquam mauris metus at odio. </div>
+</body>
+</html>
